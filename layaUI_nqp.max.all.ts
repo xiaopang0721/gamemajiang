@@ -171,12 +171,12 @@ module ui.nqp.game_ui.sichuanmajiang {
 
 module ui.nqp.game_ui.sichuanmajiang {
     export class SiChuanMaJiang_HUDUI extends View {
-		public view_hud:ui.nqp.game_ui.tongyong.HudUI;
+		public view_hud:ui.ajqp.game_ui.tongyong.HudUI;
 
-        public static  uiView:any ={"type":"View","props":{"width":1280,"height":720},"child":[{"type":"Image","props":{"top":-1,"skin":"majiang_ui/game_ui/sichuanmajiang/zjh.jpg","right":-1,"left":-1,"bottom":-1}},{"type":"Hud","props":{"var":"view_hud","top":0,"right":0,"left":0,"bottom":0,"runtime":"ui.nqp.game_ui.tongyong.HudUI"}},{"type":"Image","props":{"top":6,"skin":"majiang_ui/game_ui/sichuanmajiang/zjh_title.png","centerX":126,"anchorY":0.5,"anchorX":0.5}}]};
+        public static  uiView:any ={"type":"View","props":{"width":1280,"height":720},"child":[{"type":"Image","props":{"top":-1,"skin":"majiang_ui/game_ui/sichuanmajiang/zjh.jpg","right":-1,"left":-1,"bottom":-1}},{"type":"Hud","props":{"var":"view_hud","top":0,"right":0,"left":0,"bottom":0,"runtime":"ui.ajqp.game_ui.tongyong.HudUI"}},{"type":"Image","props":{"top":6,"skin":"majiang_ui/game_ui/sichuanmajiang/zjh_title.png","centerX":126,"anchorY":0.5,"anchorX":0.5}}]};
         constructor(){ super()}
         createChildren():void {
-        			View.regComponent("ui.nqp.game_ui.tongyong.HudUI",ui.nqp.game_ui.tongyong.HudUI);
+        			View.regComponent("ui.ajqp.game_ui.tongyong.HudUI",ui.ajqp.game_ui.tongyong.HudUI);
 
             super.createChildren();
             this.createView(ui.nqp.game_ui.sichuanmajiang.SiChuanMaJiang_HUDUI.uiView);
